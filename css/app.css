@@ -1,0 +1,62 @@
+h1,
+h2,
+h3 {
+	font-family: 'Slabo 27px', serif;
+}
+
+.my-work {
+	margin-top: 2rem;
+}
+
+.hero { /*so that we can position hero-text*/
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+.hero-text { /*text on top of hero-image*/
+   position: absolute;
+   bottom: 0;
+   left: 15px;
+   padding-left: 10px;
+   width: 100%;
+}
+
+.hero-text span { /*background of hero-text*/
+   color: white;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.top-bar, .top-bar ul { /*override default bg color*/
+	background-color: #fefefe;
+}
+
+.logo {
+	height: 150px;
+	width: 150px;
+}
+
+.portfolio-example img {
+	border: 1px solid #000;
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	.logo {
+	height: 100px;
+	width: 100px;
+	}
+}
